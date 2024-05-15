@@ -1,0 +1,384 @@
+Started GET "/" for ::1 at 2024-05-11 02:14:42 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.4ms | Allocations: 520)
+Completed 200 OK in 30ms (Views: 23.7ms | Allocations: 2746)
+
+
+Started GET "/" for ::1 at 2024-05-11 02:15:06 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.9ms | Allocations: 273)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 880)
+
+
+Started GET "/api/v1/post" for ::1 at 2024-05-11 02:15:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/post"):
+  
+Started GET "/favicon.ico" for ::1 at 2024-05-11 02:15:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20240510173834)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240510173834"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-05-10 17:39:05.221118"], ["updated_at", "2024-05-10 17:39:05.221118"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from block (2 levels) in <class:Railtie> at /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4.3/lib/active_record/railtie.rb:264)
+Started GET "/api/v1/post" for ::1 at 2024-05-11 02:42:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/post"):
+  
+Started GET "/api/v1/posts" for ::1 at 2024-05-11 02:42:57 +0900
+  
+NameError (uninitialized constant SecuredController
+
+class Api::V1::PostsController < SecuredController
+                                 ^^^^^^^^^^^^^^^^^
+Did you mean?  SecureRandom):
+  
+app/controllers/api/v1/posts_controller.rb:1:in `<top (required)>'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from block (2 levels) in <class:Railtie> at /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4.3/lib/active_record/railtie.rb:264)
+Started GET "/api/v1/post" for ::1 at 2024-05-11 02:47:15 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/post"):
+  
+Started GET "/" for ::1 at 2024-05-11 02:47:18 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 280)
+Completed 200 OK in 10ms (Views: 2.6ms | Allocations: 2214)
+
+
+Started GET "/api/v1/posts" for ::1 at 2024-05-11 02:47:25 +0900
+Processing by Api::V1::PostsController#index as */*
+Completed 500 Internal Server Error in 5ms (Allocations: 2035)
+
+
+  
+NameError (uninitialized constant ApplicationRecord
+
+class Post < ApplicationRecord
+             ^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationJob):
+  
+app/models/post.rb:1:in `<top (required)>'
+app/controllers/api/v1/posts_controller.rb:5:in `index'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from block (2 levels) in <class:Railtie> at /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4.3/lib/active_record/railtie.rb:264)
+Started GET "/api/v1/posts" for ::1 at 2024-05-11 02:50:24 +0900
+Processing by Api::V1::PostsController#index as */*
+Completed 500 Internal Server Error in 18ms (Allocations: 4288)
+
+
+  
+NameError (uninitialized constant ApplicationRecord
+
+class Post < ApplicationRecord
+             ^^^^^^^^^^^^^^^^^
+Did you mean?  ApplicationJob):
+  
+app/models/post.rb:1:in `<top (required)>'
+app/controllers/api/v1/posts_controller.rb:5:in `index'
+Started GET "/api/v1/posts" for ::1 at 2024-05-11 02:56:18 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 80ms (Views: 11.0ms | ActiveRecord: 4.4ms | Allocations: 18457)
+
+
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 02:56:55 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1977)
+
+
+  
+NameError (uninitialized constant AuthorizationService::JsonWebToken
+
+    JsonWebToken.verify(http_token)
+    ^^^^^^^^^^^^):
+  
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 02:57:49 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1822)
+
+
+  
+NameError (uninitialized constant AuthorizationService::JsonWebToken
+
+    JsonWebToken.verify(http_token)
+    ^^^^^^^^^^^^):
+  
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started GET "/api/v1/posts" for ::1 at 2024-05-11 02:59:01 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 311)
+
+
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:01:00 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1818)
+
+
+  
+NameError (uninitialized constant AuthorizationService::JsonWebToken
+
+    JsonWebToken.verify(http_token)
+    ^^^^^^^^^^^^):
+  
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:04:07 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms | Allocations: 2003)
+
+
+  
+NameError (uninitialized constant AuthorizationService::JsonWebToken
+
+    JsonWebToken.verify(http_token)
+    ^^^^^^^^^^^^):
+  
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:05:07 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms | Allocations: 1989)
+
+
+  
+NameError (uninitialized constant AuthorizationService::JsonWebToken
+
+    JsonWebToken.verify(http_token)
+    ^^^^^^^^^^^^):
+  
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from block (2 levels) in <class:Railtie> at /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4.3/lib/active_record/railtie.rb:264)
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:08:52 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 3.8ms | Allocations: 8700)
+
+
+  
+ArgumentError (not an HTTP URI):
+  
+app/lib/json_web_token.rb:18:in `jwks_hash'
+app/lib/json_web_token.rb:13:in `block in verify'
+app/lib/json_web_token.rb:6:in `verify'
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:11:50 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms | Allocations: 575)
+
+
+  
+ArgumentError (not an HTTP URI):
+  
+app/lib/json_web_token.rb:18:in `jwks_hash'
+app/lib/json_web_token.rb:13:in `block in verify'
+app/lib/json_web_token.rb:6:in `verify'
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:13:13 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 262)
+
+
+  
+ArgumentError (not an HTTP URI):
+  
+app/lib/json_web_token.rb:18:in `jwks_hash'
+app/lib/json_web_token.rb:13:in `block in verify'
+app/lib/json_web_token.rb:6:in `verify'
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:15:28 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 259)
+
+
+  
+ArgumentError (not an HTTP URI):
+  
+app/lib/json_web_token.rb:18:in `jwks_hash'
+app/lib/json_web_token.rb:13:in `block in verify'
+app/lib/json_web_token.rb:6:in `verify'
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+Started POST "/api/v1/posts" for ::1 at 2024-05-11 03:22:50 +0900
+Processing by Api::V1::PostsController#create as */*
+  Parameters: {"title"=>"タイトル1", "caption"=>"説明1", "post"=>{"title"=>"タイトル1"}}
+Completed 500 Internal Server Error in 2ms (Allocations: 258)
+
+
+  
+ArgumentError (not an HTTP URI):
+  
+app/lib/json_web_token.rb:18:in `jwks_hash'
+app/lib/json_web_token.rb:13:in `block in verify'
+app/lib/json_web_token.rb:6:in `verify'
+app/services/authorization_service.rb:18:in `verify_token'
+app/services/authorization_service.rb:7:in `current_user'
+app/controllers/secured_controller.rb:8:in `authorize_request'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from require at bin/rails:10)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from block (2 levels) in <class:Railtie> at /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activerecord-7.0.4.3/lib/active_record/railtie.rb:264)
+Started GET "/" for ::1 at 2024-05-15 22:36:53 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shirasawafumi/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.7ms | Allocations: 529)
+Completed 200 OK in 19ms (Views: 9.0ms | Allocations: 3891)
+
+
